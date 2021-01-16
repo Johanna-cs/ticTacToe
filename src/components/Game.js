@@ -45,7 +45,7 @@ const Game = () => {
     <>
       <Board squares={history[stepNumber]} onClick={handleClick} />
       <div style={styles}>
-        {winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O')}
+        <h4>{winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O')}</h4>
         {renderMoves()}
       </div>
     </>
